@@ -78,12 +78,6 @@ The refactored design uses **four cohesive, segregated interfaces**:
 
 ## 🧩 UML Class Diagram
 
-
-
-- Four small, segregated interfaces  
-- `OrderAction` implementing only the interfaces it needs  
-- `OrderTest` depending on specific abstractions (ISP in action)
-
 ```mermaid
 classDiagram
     class OrderCalculator {
