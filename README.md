@@ -96,10 +96,10 @@ classDiagram
     class OrderAction {
     }
 
-    OrderAction ..|> OrderCalculator : implements
-    OrderAction ..|> OrderPlacer : implements
-    OrderAction ..|> InvoiceGenerator : implements
-    OrderAction ..|> NotificationSender : implements
+    OrderAction <|.. OrderCalculator : implements
+    OrderAction <|.. OrderPlacer : implements
+    OrderAction <|.. InvoiceGenerator : implements
+    OrderAction <|.. NotificationSender : implements
 
     OrderTest --|> OrderAction : implements
     class OrderTest {
