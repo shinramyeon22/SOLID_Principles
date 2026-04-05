@@ -101,9 +101,7 @@ classDiagram
     OrderAction ..|> InvoiceGenerator : implements
     OrderAction ..|> NotificationSender : implements
 
-    OrderTest ..|> OrderAction : implements
+    OrderTest --|> OrderAction : implements
     class OrderTest {
         +main(String[] args)
     }
-
-    note for OrderTest "Clients depend only on the specific interfaces they need"
