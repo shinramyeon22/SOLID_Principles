@@ -2,7 +2,6 @@ public class OrderTest {
     public static void main(String[] args) {
         OrderAction orderAction = new OrderAction();
 
-        // Each "client" depends ONLY on the interface it actually needs
         OrderCalculator calculator = orderAction;
         calculator.calculateTotal(10.0, 2);
 
